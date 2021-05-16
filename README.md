@@ -21,4 +21,4 @@ Let’s try to dive into this dataset and let me denote the units of the followi
  The “training set” has all the 11 columns described above, while "test_set.csv”, the test set misses the label column, the one called “Solar Radiation”, and on this dataset our ML model was tested.
  
  We decided to tackle the problem using a voting regressor between some tree based model. 
- For our work, which predicted the solar radiation with a mean squared error in the test set of 5569, we have been crowned winners of the competition. The analysis, with the neccessary comments and explanations can be found in the "Solar_Radiation_Predictions.ipynb" file.
+ For our work, which predicted the solar radiation with a mean squared error in the test set of 5569, we have been crowned winners of the competition. The analysis, with the neccessary comments and explanations can be found in the "Solar_Radiation_Prediction.ipynb" file.
