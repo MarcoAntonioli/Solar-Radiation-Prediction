@@ -15,8 +15,8 @@ Let’s try to dive into this dataset and let me denote the units of the followi
   7. Barometric pressure: Hg
   8. Wind direction: degrees
   9. Wind speed: miles per hour
-  10. Sunrise: Hawaii time
-  11. Sunset: Hawaii time
+  10. Sunrise: sunrise time
+  11. Sunset: sunset time
   
  The training set has all the 11 columns described above, while "test_set.csv”, the test set misses the label column, the one called “Solar Radiation”, and on this dataset our ML model was tested.
  
