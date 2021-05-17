@@ -22,9 +22,8 @@ Let’s try to dive into this dataset and let me denote the units of the followi
 
 For the purpose of our challenge, the dataset was divided into:
 
-   "train_set.csv": (31051 entries) It contains the target feature and was used for training and model selection.
-   
-   "test_set.csv": (1635 entries) It does not contain the target feature and was used to evaluate the final performance of the algorithm.
+   - "train_set.csv": (31051 entries) It contains the target feature and was used for training and model selection.
+   - "test_set.csv": (1635 entries) It does not contain the target feature and was used to evaluate the final performance of the algorithm.
   
  The training set has all the 11 columns described above, while "test_set.csv”, the test set misses the label column, the one called “Solar Radiation”, and on this dataset our ML model was tested.
  
