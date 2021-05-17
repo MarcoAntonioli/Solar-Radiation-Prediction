@@ -2,23 +2,31 @@
 
 Project developed alongside Edoardo Botta and Elia Torre for the Hackathon of the Bocconi Students for Data Science.
 
-The dataset "train_set.csv" is related to the level of solar radiation on earth registered from 11/9/2016 to 31/12/2016. With all the sensor data related to solar radiation, we had to predict a continuous variable related to the quantity of variation for a specificied instant. 
+The original dataset was released as part of a task for NASA Hackathon and can be retrieved from kaggle.com. The dataset is related to the level of solar radiation on earth registered from 11/9/2016 to 31/12/2016. It contains measurements of 5 athmospheric variables, plus useful information about the time of measurement.
+
+The goal was to predict the radiation level at a specificied instant, given all the sensor data available.
 
 Let’s try to dive into this dataset and let me denote the units of the following columns.
 
-  1. UNIX time: seconds since Jan 1, 1970
-  2. The date
-  3. The local time of day
-  4. Solar radiation: watts per meter squared (Label variable, to be predicted)
-  5. Temperature: degrees Fahrenheit
-  6. Humidity: percent
-  7. Barometric pressure: Hg
-  8. Wind direction: degrees
-  9. Wind speed: miles per hour
-  10. Sunrise: sunrise time
-  11. Sunset: sunset time
+   1. UNIX time: seconds since Jan 1, 1970
+   2. The date
+   3. The local time of day
+   4. Solar radiation: watts per meter squared (Label variable, to be predicted)
+   5. Temperature: degrees Fahrenheit
+   6. Humidity: percent
+   7. Barometric pressure: Hg
+   8. Wind direction: degrees
+   9. Wind speed: miles per hour
+   10. Sunrise: sunrise time
+   11. Sunset: sunset time
+
+For the purpose of our challenge, the dataset was divided into:
+
+   "train_set.csv": (31051 entries) It contains the target feature and was used for training and model selection.
+   "test_set.csv": (1635 entries) It does not contain the target feature and was used to evaluate the final performance of the algorithm.
   
  The training set has all the 11 columns described above, while "test_set.csv”, the test set misses the label column, the one called “Solar Radiation”, and on this dataset our ML model was tested.
  
- We decided to tackle the problem using a voting regressor between some tree based model. 
- For our work, which predicted the solar radiation with a mean squared error in the test set of 5569, we have been crowned winners of the competition. The analysis, with the neccessary comments and explanations can be found in the "Solar_Radiation_Prediction.ipynb" file.
+We decided to tackle the problem using a voting regressor, averaging the predictions of two decision tree-based models.
+
+For our work, which predicted the solar radiation with a mean squared error in the test set of 5569, we have been crowned winners of the competition. The analysis, with the necessary comments and explanations can be found in the "Solar_Radiation_Prediction.ipynb" file.
